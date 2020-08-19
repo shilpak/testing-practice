@@ -15,21 +15,22 @@ public class Palindrome {
      * @param s The String to test for a palindrome.
      * @return True if the given string is a palindrome, false if not.
      */
-    public static boolean isPalindrome(String s) {
-        boolean result = false;
-        if (s != null) {
-            int startPosition = 0;
-            int endPosition = s.length()-1;
-            while (startPosition < endPosition) {
-                result = s.charAt(startPosition) == s.charAt(endPosition);
-                startPosition++;
-                endPosition--;
-                if (!result) {
-                    break;
+	
+        public static boolean isPalindrome(String s) {
+            boolean result = false;
+            if (s != null) {
+                int startPosition = 0;
+                int endPosition = s.length()-1;
+                while (startPosition < endPosition) {
+                    result = s.charAt(startPosition) == s.charAt(endPosition);
+                    startPosition++;
+                    endPosition--;
+                    if (!result) {
+                        break;
+                    }
                 }
             }
+            return result;
         }
-        return result;
-    }
 
 }
