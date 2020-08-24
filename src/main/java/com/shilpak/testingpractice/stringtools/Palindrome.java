@@ -18,6 +18,8 @@ public class Palindrome {
         boolean result = false;
         if (s != null) {
             s = s.toLowerCase();
+            s = removeWhiteSpace(s);
+            s = removePunctuation(s);
             if (s.length() == 1) {
                 result = true;
             }
@@ -33,6 +35,14 @@ public class Palindrome {
             }
         }
         return result;
+    }
+
+    public static String removeWhiteSpace(String s) {
+        return s.replaceAll("\\s", "");
+    }
+
+    public static String removePunctuation(String s) {
+        return s.replaceAll("[^a-zA-Z0-9 ]", "");
     }
 
 }
