@@ -17,6 +17,7 @@ public class Palindrome {
     public static boolean isPalindrome(String s) {
         boolean result = false;
         if (s != null) {
+            s = s.toLowerCase();
             if (s.length() == 1) {
                 result = true;
             }
