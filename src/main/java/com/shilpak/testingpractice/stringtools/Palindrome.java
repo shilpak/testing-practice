@@ -42,7 +42,7 @@ public class Palindrome {
     }
 
     public static String removePunctuation(String s) {
-        return s.replaceAll("[^a-zA-Z0-9 ]", "");
+        return s.replaceAll("[^-a-zA-Z0-9]", "");
     }
 
 }
