@@ -17,8 +17,8 @@ public class PalindromeTest {
 	}
 
 	@Test 
-	public void charactersWhichIsAPalindromeReturnsTrue() {
-		assertTrue(Palindrome.isPalindrome("#*#*#")); 
+	public void charactersWhichIsNotAPalindromeReturnsFalse() {
+		assertFalse(Palindrome.isPalindrome("#*#*#")); 
 	}
 
 	@Test 
@@ -67,8 +67,8 @@ public class PalindromeTest {
 	}
 
 	@Test 
-	public void zeroIsNotAPalindromeReturnsFalse() {
-		assertFalse(Palindrome.isPalindrome("0")); 
+	public void zeroIsAPalindromeReturnsTrue() {
+		assertTrue(Palindrome.isPalindrome("0")); 
 	}
 
 	@Test 
